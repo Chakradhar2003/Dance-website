@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title CDA
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+        ul 
+            div#logo 
+                img(src='/static/fav.png') 
+                | CDA
+            li: a(href='/') Home
+            li: a(href='/') About
+            li: a(href='/') Services 
+            li: a(href='/') Class Info
+            li: a(href='/') Contact 
+
+    section#introSection 
+        div Welcome to Chakradhar's Dance Academy
+        div.small Eat Sleep Dance Repeat 
+
+    section#missionSection 
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img 
+                    img(src='/static/a1.png')
+                div.card-content 
+                    p This is the best dance academy of the universe.
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img 
+                    img(src='/static/a2.png')
+                div.card-content 
+                    p This is the best dance academy of the universe.
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img 
+                    img(src='/static/a3.png')
+                div.card-content 
+                    p This is the best dance academy of the universe.
+    section#sponsorsSection 
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/s1.jpg" alt="")
+            img(src="/static/s2.png" alt="")
+            img(src="/static/s3.jpg" alt="")
+            img(src="/static/s4.png" alt="")
+    footer#footer
+        |   Copyright &copy 2023 ChakradharDanceAcademy.com | All rights reserved
+    script
+      include ../static/index.js
